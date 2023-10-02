@@ -1,16 +1,28 @@
 class Validator{
     constructor(){
-        this.validations = []
+        this.validations = ['data-min-length',
+        ]
     }
     validate(form){
         let inputs = form.getElementsByTagName('input');
         let inputsAsrray = [...inputs];
-        console.log(inputsAsrray)
+
+        inputsAsrray.forEach(function(input){
+            for(let i = 0; this.validations.length > i; i++){
+                if(input.getAttribute(this.validations[i]) != null){
+                    let method = this.validations[i].replace('data','').replace('-', '');
+                    let value = input.getAttribute(this.validations[i]);
+                    this[method](input, value); 
+                }
+            }
+        }, this);
     }
 }
 
-
-
+minLenght(input, minValue);{
+    console.log(input);
+    console.log(minValue);
+}
 
 let form = document.getElementById("register-form")
 let submit = document.getElementById("btn-submit")
@@ -20,5 +32,5 @@ let validator = new Validator();
 // evento que dispara as validações
 submit.addEventListener('click', (e) =>{
     e.preventDefault();
-    console.log("funcionou");
+    validator.validate(form)
 })
