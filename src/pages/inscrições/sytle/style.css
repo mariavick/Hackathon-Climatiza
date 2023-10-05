@@ -204,13 +204,13 @@ fomr{
 
 label{
     font-weight: bold;
-    font-size: .8rem;
+    font-size: 1.1rem;
 }
 
 input{
     border-bottom: 2px solid black;
     padding: 10px;
-    font-size: .9rem;
+    font-size: 1rem;
     margin-bottom: 40px;
 }
 
