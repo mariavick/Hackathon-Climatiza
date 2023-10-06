@@ -17,7 +17,7 @@ a {
 p {
 	color: black;
 	font-size: 1.4rem;
-	margin-top: 5px;
+	margin-bottom: 15px;
 	line-height: 2.5rem;
 	font-weight: 300;
 	letter-spacing: 0.05rem;
@@ -39,7 +39,7 @@ img {
 
 .section-title {
 	font-size: 4rem;
-	font-weight: 300;
+	/*font-weight: 300;*/
 	color: black;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -211,8 +211,7 @@ img {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgb(63, 63, 63);
-	opacity: 0.7;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	z-index: -1;
 }
 #home .home {
@@ -236,7 +235,10 @@ img {
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
-	padding: 100px 0;
+	padding: 100px 100px;
+}
+.challenge p span {
+	font-weight: bold;
 }
 #challenge .challenge-top {
 	max-width: 500px;
@@ -264,6 +266,10 @@ img {
 	z-index: 1;
 	overflow: hidden;
 }
+
+#challenge .challenge-item span{
+	font-size: 10px;
+}
 #challenge .challenge-item::after {
 	content: '';
 	position: absolute;
@@ -290,6 +296,7 @@ img {
 	color: white;
 	text-align: left;
 	font-size: 15px;
+	
 } 
 /* End Challenge section
 
@@ -312,11 +319,11 @@ img {
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
-	margin-bottom: 10px;
 }
-#award .col-right p {
+#award .col-right p h2 {
 	margin-bottom: 20px;
 	font-size: 1.5rem;
+	padding-left: 100px;
 }
 /* 
 #award .col-left .award-img {
@@ -396,10 +403,10 @@ img {
 		font-size: 2.5rem;
 		padding: 10px 60px;
 	}
-	h1.section-title {
-		font-size: 6rem;
+	.section-title h1 {
+		font-size: 6rem;	
 	}
-
+	
 	/* Home */
 	#home h1 {
 		font-size: 4rem;
@@ -420,9 +427,11 @@ img {
 	#award .col-left {
 		width: 600px;
 		height: 400px;
-		padding-left: 60px;
 	}
 	
+	.col-right {
+		padding-right: 100px;
+	}
 	#award.col-right {
 		text-align: left;
 		padding: 30px;
