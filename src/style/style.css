@@ -198,7 +198,7 @@ img {
 
 /* Home Section */
 #home {
-	background-image: url(./imgs/fundo.png);
+	background-image: url(../../imgs/fundo.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
