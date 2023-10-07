@@ -211,7 +211,7 @@ img {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #29323c 0%, #0f4723 100%);
 	z-index: -1;
 }
 #home .home {
@@ -237,8 +237,9 @@ img {
 	margin: 0 auto;
 	padding: 100px 100px;
 }
-.challenge p span {
+.challenge p strong {
 	font-weight: bold;
+	text-align: center;
 }
 #challenge .challenge-top {
 	max-width: 500px;
@@ -253,11 +254,11 @@ img {
 }
 #challenge .challenge-item {
 	flex-basis: 80%;
-	display: flex;
+	display:flex;
 	align-items: flex-start;
 	justify-content: center;
-	flex-direction: column;
-	padding: 30px;
+	flex-direction:column;
+	padding: 15px;
 	border-radius: 20px;
 	background-size: cover;
 	margin: 00px 5%;
@@ -266,9 +267,6 @@ img {
 	overflow: hidden;
 }
 
-#challenge .challenge-item span{
-	font-size: 10px;
-}
 #challenge .challenge-item::after {
 	content: '';
 	position: absolute;
@@ -285,16 +283,23 @@ img {
 	width: 80px;
 	margin-bottom: 20px;
 }
+
+#challenge .section-text p {
+
+	text-align: justify;
+}
+
 #challenge .challenge-item h2 {
 	font-size: 3rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+	
 }
 #challenge .challenge-item p {
 	color: white;
-	text-align: left;
-	font-size: 15px;
+	text-align: center;
+	font-size: 13px;
 	
 } 
 /* End Challenge section
@@ -302,11 +307,11 @@ img {
 /* Award Section */
 #award .award {
 	flex-direction: column-reverse;
-	text-align: left;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 20px;
 }
+
 /* #award .col-left {
 	width: 250px;
 	height: 360px;
@@ -318,11 +323,17 @@ img {
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
+	text-align: justify;
 }
 #award .col-right p h2 {
 	margin-bottom: 20px;
 	font-size: 1.5rem;
 	padding-left: 100px;
+	text-align: justify;
+}
+
+#award .col-right p {
+	text-align: justify;
 }
 /* 
 #award .col-left .award-img {
