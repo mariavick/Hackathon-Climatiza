@@ -198,7 +198,7 @@ img {
 
 /* Home Section */
 #home {
-	background-image: url('../../src/images/DSC_2105.jpg');
+
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -246,7 +246,7 @@ img {
 }
 #challenge .challenge-bottom {
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	justify-content: center;
 	flex-wrap: row;
 	margin-top: 50px;
@@ -259,7 +259,6 @@ img {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 20px;
-	/* background-image: url(./img/img-1.png); */
 	background-size: cover;
 	margin: 00px 5%;
 	position: relative;
