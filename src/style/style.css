@@ -60,10 +60,12 @@ img {
 	margin-top: 30px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
+	
 }
 .btn:hover {
 	color: white;
 	background-color: rgb(58, 12, 163);
+
 }
 .brand h1 {
 	font-size: 3rem;
@@ -198,12 +200,15 @@ img {
 
 /* Home Section */
 #home {
-	background-image: url(../assets/imgs/fundo.png);
+
+	background-image:url(../assets/imgs/fundo.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
+	align-items: center;
 }
+
 #home::after {
 	content: '';
 	position: absolute;
@@ -214,19 +219,32 @@ img {
 	background-color: rgb(63, 63, 63);
 	opacity: 0.7;
 	z-index: -1;
+
 }
-#home .home {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 50px;
-	justify-content: flex-start;
+
+#home {
+    background-image: url(../assets/imgs/fundo.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
 }
+
+.btn-container {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+  }
+
 #home h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
 	position: relative;
 	color: white;
+	text-align: center;
 }
 /* End Home section */
 
@@ -238,10 +256,7 @@ img {
 	margin: 0 auto;
 	padding: 50px 30px;
 }
-.challenge p strong {
-	font-weight: bold;
-	text-align: center;
-}
+
 #challenge .challenge-top {
 	max-width: 500px;
 	margin: 0 auto;
@@ -288,6 +303,7 @@ img {
 #challenge .section-text p {
 
 	text-align: justify;
+
 }
 
 #challenge .challenge-item h2 {
