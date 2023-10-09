@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #323232;
+	border: none;
+}
+
+body {
+	padding-top: 15vh;
+	background-image: url(../../../assets/imgs/fundo.png);
+	background-size: cover;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+.brand h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
+
+.brand h1 span {
+	color: rgb(0, 150, 199);
+}
+
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+
+#header .header {
+	min-height: 8vh;
+	background-color: rgba(31, 30, 30, 0.24);
+
+}
+
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1400px;
+	padding: 0 10px;
+}
+
+#header .nav-list ul {
+	list-style: none;
+	position: absolute;
+	background-color: rgb(31, 30, 30);
+	width: 100vw;
+	height: 100vh;
+	left: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	overflow-x: hidden;
+	transition: 0.5s ease left;
+}
+
+#header .nav-list ul.active {
+	left: 0%;
+}
+
+#header .nav-list ul a {
+	font-size: 2.5rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	padding: 20px;
+	display: block;
+}
+
+/* #header .nav-list ul a::after {
+	content: attr(data-after);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	color: rgba(240, 248, 255, 0.021);
+	font-size: 13rem;
+	letter-spacing: 50px;
+	z-index: -1;
+	transition: 0.3s ease letter-spacing;
+} */
+
+#header .nav-list ul li:hover a::after {
+	transform: translate(-50%, -50%) scale(1);
+	letter-spacing: initial;
+}
+
+#header .nav-list ul li:hover a {
+	color: rgb(0, 150, 199);
+}
+
+#header .hamburger {
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	border: 3px solid white;
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	cursor: pointer;
+	transform: scale(0.8);
+	margin-right: 20px;
+}
+
+#header .hamburger .bar {
+	height: 2px;
+	width: 30px;
+	position: relative;
+	background-color: white;
+	z-index: -1;
+}
+
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	background-color: white;
+	transition: 0.3s ease;
+	transition-property: top, bottom;
+}
+
+#header .hamburger .bar::after {
+	top: 8px;
+}
+
+#header .hamburger .bar::before {
+	bottom: 8px;
+}
+
+#header .hamburger.active .bar::before {
+	bottom: 0;
+}
+
+#header .hamburger.active .bar::after {
+	top: 0;
+}
+
+
+input,
+label {
+	display: block;
+	outline: none;
+	width: 100%;
+}
+
+a {
+	color: #E60084;
+}
+
+
+#main-container {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFF;
+	border-radius: 10px;
+	padding: 25px;
+}
+
+#main-container h1 {
+	text-align: center;
+	margin-bottom: 25px;
+	font-size: 1.6rem;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.full-box {
+	flex: 1 1 100%;
+	position: relative;
+}
+
+.half-box {
+	flex: 1 1 45%;
+	position: relative;
+}
+
+.spacing {
+	margin-right: 2.5%;
+}
+
+label {
+	font-weight: bold;
+	font-size: .8rem;
+}
+
+input {
+	border-bottom: 2px solid #323232;
+	padding: 10px;
+	font-size: .9rem;
+	margin-bottom: 40px;
+}
+
+input:focus {
+	border-color: #0060e6;
+}
+
+input[type="submit"] {
+	background-color: #005ce6;
+	color: #FFF;
+	border: none;
+	border-radius: 20px;
+	height: 40px;
+	cursor: pointer;
+}
+
+#agreement {
+	margin-right: 5px;
+}
+
+#agreement,
+#agreement-label {
+	display: inline-block;
+	width: auto;
+}
+
+.error-validation {
+	color: #ff1a1a;
+	position: absolute;
+	top: 57px;
+	font-size: 12px;
+}
+
+.template {
+	display: none;
+}
+
+@keyframes hamburger_puls {
+
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	.btn {
+		font-size: 2.5rem;
+		padding: 10px 60px;
+	}
+
+	h1.section-title {
+		font-size: 6rem;
+	}
+
+	#home h1 {
+		font-size: 4rem;
+	}
+
+	#challenge .challenge-bottom .challenge-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+
+	#award .award {
+		flex-direction: row;
+	}
+
+	#award .col-left {
+		width: 600px;
+		height: 400px;
+		padding-left: 60px;
+	}
+
+	#award.col-right {
+		text-align: left;
+		padding: 30px;
+	}
+
+	#award .col-right h1 {
+		text-align: left;
+	}
+
+@media only screen and (min-width: 1200px) {
+
+	#header .hamburger {
+		display: none;
+	}
+
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+
+	#challenge .challenge-bottom .challenge-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+}
+}
