@@ -109,11 +109,10 @@ class Validator {
 
     cleanValidations(validations) {
         validations.forEach(el => el.remove());
-        return alert("Parabéns, você foi inscrito com sucesso!")
     }
 }
 
-    const clearFields =()=>{
+    const clearFields = () => {
     const fields = document.querySelectorAll('.modal-field')
     fields.forEach(fields => fields.value = "")
 }
