@@ -2,11 +2,11 @@
 
 Bem-vindo ao hackathon climatiza! Embarque em uma divertida e desafiadora aventura de combate aos eventos climáticos por meio do desenvolvimento de tecnologias inovadoras.</br></br>
 
-![Hackathon Climatiza](file:///c%3A/Users/Admin/Desktop/ProjetoFinalM2/ProjetoFinalM2/index.html) </br></br>
+![Hackathon Climatiza](https://mariavick.github.io/ProjetoFinalM2/) </br></br>
 
 ## Como Participar?
 
-1. Acesse o [link do deploy do site](file:///c%3A/Users/Admin/Desktop/ProjetoFinalM2/ProjetoFinalM2/index.html) para acessar a nossa página inicial.
+1. Acesse o [link do deploy do site](https://mariavick.github.io/ProjetoFinalM2/) para acessar a nossa página inicial.
 2. Clique no botão de inscreva-se.
 3. Preencha com os seus dados pessoais.
 4. Escolha um dos desafios no nosso site oficial.
