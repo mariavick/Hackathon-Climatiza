@@ -13,6 +13,7 @@ body {
 	padding-top: 15vh;
 	background-image: url(../../../assets/imgs/fundo.png);
 	background-size: cover;
+	min-height: 100vh;
 }
 
 html {
