@@ -459,6 +459,12 @@ footer  {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 2rem;
 	}
+
+	#challenge{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
 }
 
 @media screen and (max-width: 426px){
@@ -467,6 +473,7 @@ footer  {
 		padding: 3rem 2rem;
 	}
 }
+
 
 @media screen and (max-width: 800px) {
     .challenge-bottom{
