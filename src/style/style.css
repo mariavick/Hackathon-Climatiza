@@ -39,7 +39,6 @@ img {
 
 .section-title {
 	font-size: 4rem;
-	/*font-weight: 300;*/
 	color: black;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -76,7 +75,6 @@ img {
 	color: rgb(0, 150, 199);
 }
 
-/* Header section */
 #header {
 	position: fixed;
 	z-index: 1000;
@@ -131,18 +129,7 @@ img {
 	padding: 20px;
 	display: block;
 }
-/* #header .nav-list ul a::after {
-	content: attr(data-after);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(0);
-	color: rgba(240, 248, 255, 0.021);
-	font-size: 13rem;
-	letter-spacing: 50px;
-	z-index: -1;
-	transition: 0.3s ease letter-spacing;
-} */
+
 #header .nav-list ul li:hover a::after {
 	transform: translate(-50%, -50%) scale(1);
 	letter-spacing: initial;
@@ -196,9 +183,7 @@ img {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
-/* End Header section */
 
-/* Home Section */
 #home {
 
 	background-image:url(../assets/imgs/fundo.png);
@@ -236,7 +221,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	
-  }
+}
 
 #home h1 {
 	display: block;
@@ -246,9 +231,7 @@ img {
 	color: white;
 	text-align: center;
 }
-/* End Home section */
 
-/* Challenge Section */ 
 #challenge .challenge {
 	flex-direction: column;
 	text-align: center;
@@ -303,7 +286,6 @@ img {
 #challenge .section-text p {
 
 	text-align: justify;
-
 }
 
 #challenge .challenge-item h2 {
@@ -319,9 +301,7 @@ img {
 	font-size: 13px;
 	
 } 
-/* End Challenge section
 
-/* Award Section */
 #award .award {
 	flex-direction: column-reverse;
 	max-width: 1200px;
@@ -329,13 +309,6 @@ img {
 	padding: 100px 20px;
 }
 
-/* #award .col-left {
-	width: 250px;
-	height: 360px;
-}
-#award .col-right {
-	width: 100%; */
-/* } */
 #award .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
@@ -352,63 +325,6 @@ img {
 #award .col-right p {
 	text-align: justify;
 }
-/* 
-#award .col-left .award-img {
-	height: 100%;
-	width: 100%;
-	position:relative;
-	border: 10px solid white;
-} */
-/* #about .col-left .about-img::after {
-	content: '';
-	position: absolute;
-	left: -33px;
-	top: 19px;
-	height: 98%;
-	width: 98%;
-	border: 7px solid crimson;
-	z-index: -1;
-}  */
-/* End Award Section */
-
-/* Footer */
-/* #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-}
-#footer .footer {
-	min-height: 200px;
-	flex-direction: column;
-	padding-top: 50px;
-	padding-bottom: 10px;
-}
-#footer h2 {
-	color: white;
-	font-weight: 500;
-	font-size: 1.8rem;
-	letter-spacing: 0.1rem;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#footer .social-icon {
-	display: flex;
-	margin-bottom: 30px;
-}
-#footer .social-item {
-	height: 50px;
-	width: 50px;
-	margin: 0 5px;
-}
-#footer .social-item img {
-	filter: grayscale(1);
-	transition: 0.3s ease filter;
-}
-#footer .social-item:hover img {
-	filter: grayscale(0);
-}
-#footer p {
-	color: white;
-	font-size: 1.3rem;
-} */
 
 :root {
 	--color-neutral-0: #0c0c0c;
@@ -468,10 +384,6 @@ footer  {
 
 #instagram {
 	background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-}
-
-#facebook {
-	background-color: #4267b3;
 }
 
 #whatsapp {
@@ -562,17 +474,15 @@ footer  {
 	}
 }
 
+
 @media screen and (max-width: 800px) {
-	.challenge-bottom{
-		display: flex;
-		flex-direction: column;
-		gap: 25px;
-	}
+    .challenge-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
 }
 
-/* End Footer */
-
-/* Keyframes */
 @keyframes hamburger_puls {
 	0% {
 		opacity: 1;
@@ -583,9 +493,6 @@ footer  {
 		transform: scale(1.4);
 	}
 }
-/* End Keyframes */
-
-/* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.btn {
 		font-size: 2.5rem;
@@ -594,21 +501,13 @@ footer  {
 	.section-title h1 {
 		font-size: 6rem;	
 	}
-	
-	/* Home */
 	#home h1 {
 		font-size: 4rem;
 	}
-	/* End Home */
-
-	/* Challenge Section */
 	#challenge .challenge-bottom .challenge-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	/* End Challenge Section */
-
-	/* Award */
 	#award .award {
 		flex-direction: row;
 	}
@@ -627,11 +526,6 @@ footer  {
 	#award .col-right h1 {
 		text-align: left;
 	}
-	/* End Award */
-
-	/* End Media Query For Tablet */
-
-/* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
 	#header .hamburger {
@@ -650,13 +544,9 @@ footer  {
 	#header .nav-list ul li a {
 		font-size: 1.8rem;
 	}
-
-	/* End header */
-
 	#challenge .challenge-bottom .challenge-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
 }
 }
-/* End  Media Query For Desktop */
