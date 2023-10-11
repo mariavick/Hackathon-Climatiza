@@ -255,6 +255,17 @@ input[type="submit"] {
 	}
 }
 
+@media screen and (max-width: 600px) {
+    #register-form{
+        display: flex;
+        flex-direction: column;
+    }
+    #main-container{
+        height: 100%;
+        width: 90%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
 
 	.btn {

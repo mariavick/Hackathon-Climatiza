@@ -186,8 +186,7 @@ img {
 	display: flex;
 	align-items: flex-start;
 	flex-direction: row;
-	margin-top: 30px;
-	padding: 50px;
+	margin: auto;
 	gap: 25px;
 }
 
@@ -303,6 +302,15 @@ img {
 		opacity: 0;
 		transform: scale(1.4);
 	}
+}
+
+@media screen and (max-width: 1000px){
+    .divCard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 100px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
