@@ -264,7 +264,7 @@ img {
 }
 
 /** Read More/Less Button **/
-#read_button {
+.read_button {
     border: none;
     padding: 10px;
     border-radius: 20px;
@@ -277,7 +277,7 @@ img {
     transition: all 0.2s ease-in-out;
 }
 
-#read_button:hover {
+.read_button:hover {
     background-color: transparent;
     color: rgb(157, 78, 221);
     transition: all 0.2s ease-in-out;
