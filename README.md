@@ -4,7 +4,7 @@
 
 Bem-vindo ao hackathon climatiza! Embarque em uma divertida e desafiadora aventura de combate aos eventos climáticos por meio do desenvolvimento de tecnologias inovadoras.</br></br>
 
-![Hackathon Climatiza](https://mariavick.github.io/ProjetoFinalM2/o/climatiza.png) </br>
+![Hackathon Climatiza](../../assets/imgs/climatiza.jpg) </br>
 
 ## Como Participar?
 
