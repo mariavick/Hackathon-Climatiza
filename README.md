@@ -1,11 +1,6 @@
 
-<h1 align="center">🌎 Climatiza </h1>
 
-<h1 align="center">
-    <a href="https://mariavick.github.io/ProjetoFinalM2/"><img alt="climatiza" title="Hackathon Climatiza" src="climatiza" /></a>
-</h1>
-
-# Hackathon Climatiza
+# 🌎 Hackathon Climatiza
 
 Bem-vindo ao hackathon climatiza! Embarque em uma divertida e desafiadora aventura de combate aos eventos climáticos por meio do desenvolvimento de tecnologias inovadoras.</br></br>
 
