@@ -1,4 +1,4 @@
-<img src="/assets/img/climatiza.png">
+
 
 # 🌎 Hackathon Climatiza
 
