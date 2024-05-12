@@ -4,6 +4,8 @@
 
 Bem-vindo ao hackathon climatiza! Embarque em uma divertida e desafiadora aventura de combate aos eventos climáticos por meio do desenvolvimento de tecnologias inovadoras.</br>
 
+![Landing Page](https://i.imgur.com/sSo7rsW.png)
+
 ## Como Participar?
 
 1. Acesse o [link do deploy do site](https://mariavick.github.io/ProjetoFinalM2/) para acessar a nossa página inicial.
@@ -43,3 +45,4 @@ Se você deseja contribuir para este projeto, fique à vontade para enviar pull 
 ❗Competição meramente ilustrativa para fins educacionais❗
 
 ---
+
